@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Künstliche Befruchtung"
+author: theodor
 image: assets/images/befruchtung.png
 ---
 
