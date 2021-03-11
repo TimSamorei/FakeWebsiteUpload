@@ -4,7 +4,7 @@ permalink: "/contact.html"
 ---
 
 <form action="https://formspree.io/ich.sag.nix@web.de" method="POST">    
-<p class="mb-4">Kontaktformular zur Terminvereinbarung, für Fragen verweisen wir Sie an das Q&A</p>
+<p class="mb-4">Kontaktformular zur Terminvereinbarung, für Fragen verweisen wir Sie an das Q&A.</p>
 <div class="form-group row">
 <div class="col-md-6">
 <input class="form-control" type="text" name="name" placeholder="Name*" required>
