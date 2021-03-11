@@ -3,7 +3,7 @@ title: "Schreibt uns"
 permalink: "/contact.html"
 ---
 
-<form action="https://formspree.io/ich.sag.nix@web.de" method="POST">    
+<form action="https://formspree.io/f/meqpyglz" method="POST">    
 <p class="mb-4">Kontaktformular zur Terminvereinbarung, für Fragen verweisen wir Sie an das Q&A.</p>
 <div class="form-group row">
 <div class="col-md-6">
