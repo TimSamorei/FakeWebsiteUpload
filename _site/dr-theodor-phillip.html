@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Schreibt uns | Kinderwunschklinik Waghäusel</title>
+    <title>Dr. Theodor Phillip | Kinderwunschklinik Waghäusel</title>
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Schreibt uns | Kinderwunschklinik Waghäusel</title>
+<title>Dr. Theodor Phillip | Kinderwunschklinik Waghäusel</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Schreibt uns" />
+<meta property="og:title" content="Dr. Theodor Phillip" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/contact.html" />
-<meta property="og:url" content="http://localhost:4000/contact.html" />
+<link rel="canonical" href="http://localhost:4000/dr-theodor-phillip.html" />
+<meta property="og:url" content="http://localhost:4000/dr-theodor-phillip.html" />
 <meta property="og:site_name" content="Kinderwunschklinik Waghäusel" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/contact.html","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon2.png"}},"headline":"Schreibt uns","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/dr-theodor-phillip.html","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon2.png"}},"headline":"Dr. Theodor Phillip","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -123,7 +123,7 @@ var documents = [{
     "id": 7,
     "url": "http://localhost:4000/categories.html",
     "title": "Categories",
-    "body": "          Categories                              Featured:    				                  "
+    "body": "          Categories          {% for category in site. categories %}     {{ category[0] }}:           {% assign pages_list = category[1] %}    {% for post in pages_list %}    {% if post. title != null %}     {% if group == null or group == post. group %}           {% include main-loop-card. html %}     {% endif %}    {% endif %}    {% endfor %}    {% assign pages_list = nil %}    {% assign group = nil %}    {% endfor %}                  {% include sidebar-featured. html %}          "
     }, {
     "id": 8,
     "url": "http://localhost:4000/contact.html",
@@ -260,24 +260,154 @@ function lunr_search(term) {
     <!-- Content -->
     <main role="main" class="site-content">
         <div class="container">
-<h3 class="font-weight-bold spanborder"><span>Schreibt uns</span></h3>
-<div class="page-content">
-<form action="https://formspree.io/ich.sag.nix@web.de" method="POST">    
-<p class="mb-4">Kontaktformular zur Terminvereinbarung, für Fragen verweisen wir Sie an das Q&amp;A</p>
-<div class="form-group row">
-<div class="col-md-6">
-<input class="form-control" type="text" name="name" placeholder="Name*" required="" />
+<div class="row justify-content-center">
+    <div class="col-md-8">        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-9">
+                <h2 class="font-weight-bold">Dr. Theodor Phillip <!--<span class="small btn btn-outline-success btn-sm btn-round"><a href="">Follow</a></span>--></h2>
+                <!--<p><a href=""></a></p>-->
+                <p class="excerpt">Meine Aufgabe als Mediziner ist es, kinderlosen Paaren neue Möglichkeiten zu eröffnen.</p>
+            </div>
+            <div class="col-md-3 text-right">
+                <img alt="Dr. Theodor Phillip" src="/assets/images/theodor.png" class="rounded-circle" height="100" width="100">
+            </div>
+        </div>
+        <!---
+        <h4 class="font-weight-bold spanborder"><span>Posts by Dr. Theodor Phillip</span></h4>
+            
+            
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/beratung/">Beratung</a>
+	</h2>
+	<p class="excerpt">
+	   Für viele Menschen steht es außer Frage, dass sie Kinder haben wollen. Lediglich den richtigen Zeitpunkt dafür halten sich viele offen. Doch wenn es dann so weit sein soll und sich di...
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Feb 26, 2021
+	</small>
 </div>
-<div class="col-md-6">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Addresse*" required="" />
-</div>
-</div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Nachricht*" required=""></textarea>    
-<input class="btn btn-success" type="submit" value="Send" />
-</form>
 
-<!-- Comments -->
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/beratung/">
+	<img class="w-100" src="/assets/images/Beratung.png" alt="Beratung">
+	</a>
+	</div>
 
+</div>
+            
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/befruchtung/">Künstliche Befruchtung</a>
+	</h2>
+	<p class="excerpt">
+	   Wenn eine Schwangerschaft auf natürlichem Weg nicht zustande kommt, gibt es die Möglichkeiten der künstlichen Befruchtung (sogenannte assistierte Reproduktion, ART). Dieser gehen meis...
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Jan 07, 2021
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/befruchtung/">
+	<img class="w-100" src="/assets/images/befruchtung.png" alt="Künstliche Befruchtung">
+	</a>
+	</div>
+
+</div>
+            
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/paare/">Gleichgeschlechtliche Paare</a>
+	</h2>
+	<p class="excerpt">
+	   Gleichgeschlechtliche Paare
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Oct 12, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/paare/">
+	<img class="w-100" src="/assets/images/lesben.jpg" alt="Gleichgeschlechtliche Paare">
+	</a>
+	</div>
+
+</div>
+            
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/kryokonservierung/">Kryo­konservierung Sperma</a>
+	</h2>
+	<p class="excerpt">
+	   Einfrieren und Lagern von Samenproben
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 05, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/kryokonservierung/">
+	<img class="w-100" src="/assets/images/proben.png" alt="Kryo­konservierung Sperma">
+	</a>
+	</div>
+
+</div>
+            
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/corona/">Die aktuelle Situation</a>
+	</h2>
+	<p class="excerpt">
+	   Aufgrund der aktuellen Situation ist unser Telefon nicht dauerhaft besetzt. Für einen Beratungstermin wenden Sie sich bitte per E-mail an uns oder nutzen Sie unser Kontaktformular. Fü...
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		May 14, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/corona/">
+	<img class="w-100" src="/assets/images/rona.jpg" alt="Die aktuelle Situation">
+	</a>
+	</div>
+
+</div>
+            
+        -->
+    </div>
 </div>
 </div>
     </main>

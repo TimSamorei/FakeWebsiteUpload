@@ -4,18 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Schreibt uns | Kinderwunschklinik Waghäusel</title>
+    <title>Kryo­konservierung Sperma | Kinderwunschklinik Waghäusel</title>
 
     <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Schreibt uns | Kinderwunschklinik Waghäusel</title>
+<title>Kryo­konservierung Sperma | Kinderwunschklinik Waghäusel</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Schreibt uns" />
+<meta property="og:title" content="Kryo­konservierung Sperma" />
+<meta name="author" content="theodor" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/contact.html" />
-<meta property="og:url" content="http://localhost:4000/contact.html" />
+<meta name="description" content="Einfrieren und Lagern von Samenproben" />
+<meta property="og:description" content="Einfrieren und Lagern von Samenproben" />
+<link rel="canonical" href="http://localhost:4000/kryokonservierung/" />
+<meta property="og:url" content="http://localhost:4000/kryokonservierung/" />
 <meta property="og:site_name" content="Kinderwunschklinik Waghäusel" />
+<meta property="og:image" content="http://localhost:4000/assets/images/proben.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-05T00:00:00-04:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/contact.html","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon2.png"}},"headline":"Schreibt uns","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/kryokonservierung/","datePublished":"2020-08-05T00:00:00-04:00","dateModified":"2020-08-05T00:00:00-04:00","image":"http://localhost:4000/assets/images/proben.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/kryokonservierung/"},"author":{"@type":"Person","name":"theodor"},"description":"Einfrieren und Lagern von Samenproben","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon2.png"},"name":"theodor"},"headline":"Kryo­konservierung Sperma","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -93,27 +99,27 @@ var documents = [{
     "id": 1,
     "url": "http://localhost:4000/dr-anna-gramm.html",
     "title": "Dr. Anna Gramm",
-    "body": "                        Dr. Anna Gramm :                 Falls die Natur einen Fehler macht, sind wir die Helfer.                                     "
+    "body": "                        {{page. title}} :                 {{ site. authors. anna. bio }}                                     "
     }, {
     "id": 2,
     "url": "http://localhost:4000/felix-ochse.html",
     "title": "Felix Ochse",
-    "body": "                        Felix Ochse :                 Die Möglichkeiten der Technik begeistern mich immer wieder.                                     "
+    "body": "                        {{page. title}} :                 {{ site. authors. felix. bio }}                                     "
     }, {
     "id": 3,
     "url": "http://localhost:4000/dr-roman-tisch.html",
     "title": "Dr. Roman Tisch",
-    "body": "                        Dr. Roman Tisch :                 Wenn die Möglichkeiten erschöpft scheinen, kommen wir zum Einsatz.                                     "
+    "body": "                        {{page. title}} :                 {{ site. authors. roman. bio }}                                     "
     }, {
     "id": 4,
     "url": "http://localhost:4000/sophia-weschenfelder.html",
     "title": "Sophia Weschenfelder",
-    "body": "                        Sophia Weschenfelder :                 Wenn wir Paaren den Kinderwunsch erfüllen können, ist das die größte Belohnung in meinem Beruf.                                     "
+    "body": "                        {{page. title}} :                 {{ site. authors. sophia. bio }}                                     "
     }, {
     "id": 5,
     "url": "http://localhost:4000/dr-theodor-phillip.html",
     "title": "Dr. Theodor Phillip",
-    "body": "                        Dr. Theodor Phillip :                 Meine Aufgabe als Mediziner ist es, kinderlosen Paaren neue Möglichkeiten zu eröffnen.                                     "
+    "body": "                        {{page. title}} :                 {{ site. authors. theodor. bio }}                                     "
     }, {
     "id": 6,
     "url": "http://localhost:4000/buy-me-a-coffee.html",
@@ -123,7 +129,7 @@ var documents = [{
     "id": 7,
     "url": "http://localhost:4000/categories.html",
     "title": "Categories",
-    "body": "          Categories                              Featured:    				                  "
+    "body": "          Categories          {% for category in site. categories %}     {{ category[0] }}:           {% assign pages_list = category[1] %}    {% for post in pages_list %}    {% if post. title != null %}     {% if group == null or group == post. group %}           {% include main-loop-card. html %}     {% endif %}    {% endif %}    {% endfor %}    {% assign pages_list = nil %}    {% assign group = nil %}    {% endfor %}                  {% include sidebar-featured. html %}          "
     }, {
     "id": 8,
     "url": "http://localhost:4000/contact.html",
@@ -259,27 +265,161 @@ function lunr_search(term) {
 
     <!-- Content -->
     <main role="main" class="site-content">
-        <div class="container">
-<h3 class="font-weight-bold spanborder"><span>Schreibt uns</span></h3>
-<div class="page-content">
-<form action="https://formspree.io/ich.sag.nix@web.de" method="POST">    
-<p class="mb-4">Kontaktformular zur Terminvereinbarung, für Fragen verweisen wir Sie an das Q&amp;A</p>
-<div class="form-group row">
-<div class="col-md-6">
-<input class="form-control" type="text" name="name" placeholder="Name*" required="" />
+        
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row  justify-content-between ">
+				<div class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+                        <span class="catlist">
+						
+                        </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">Kryo­konservierung Sperma</h1>
+					<div class="d-flex align-items-center">
+                        
+                        <img class="rounded-circle" src="/assets/images/theodor.png" alt="Dr. Theodor Phillip" width="70"/>
+                        
+						<small class="ml-3"> Dr. Theodor Phillip <span>
+                            <span class="text-muted d-block mt-1">05.08.2020 · <span class="reading-time">
+  
+  
+    Lesezeit: 2 min
+  
+</span>
+    </span>
+						</small>
+					</div>
+				</div>
+                
+				<div class="col-md-6 pr-0 align-self-center">
+					<img class="rounded" src="/assets/images/proben.png" alt="Kryo­konservierung Sperma">
+				</div>
+                
+			</div>
+		</div>
+	</div>
 </div>
-<div class="col-md-6">
-<input class="form-control" type="email" name="_replyto" placeholder="E-mail Addresse*" required="" />
-</div>
-</div>
-<textarea rows="8" class="form-control mb-3" name="message" placeholder="Nachricht*" required=""></textarea>    
-<input class="btn btn-success" type="submit" value="Send" />
-</form>
 
-<!-- Comments -->
 
+
+
+
+<div class="container-lg pt-4 pb-4">
+	<div class="row justify-content-center">
+        
+        
+        <!-- Share -->
+		<!-- 
+		<div class="col-lg-2 pr-4 mb-4 col-md-12">
+			<div class="sticky-top sticky-top-offset text-center">
+				<div class="text-muted">
+					Share this
+				</div>
+				<div class="share d-inline-block">
+					<!-- AddToAny BEGIN -->
+					<!--
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+					<!--
+				</div>
+			</div>
+		</div>
+		-->
+        
+        
+		<div class="col-md-12 col-lg-8">
+            
+            <!-- Article -->
+			<article class="article-post">                
+			<h3 id="einfrieren-und-lagern-von-samenproben">Einfrieren und Lagern von Samenproben</h3>
+
+<p>Die männliche Zeugungsfähigkeit / Fruchtbarkeit kann durch verschiedene Behandlungen schwerer Erkrankungen dauerhaft eingeschränkt werden. Es ist deshalb in manchen Fällen wichtig, Vorsorge zu treffen, damit sich ein späterer Kinderwunsch dennoch realisieren läßt. Das Einfrieren (Kryokonservierung) einer Samenprobe vor geplanter Behandlung sichert die Möglichkeit, einen späteren Kinderwunsch zu erfüllen. Männer und auch Jugendliche ab dem Zeitpunkt der Ejakulationsfähigkeit können und sollten diese Möglichkeit nutzen. Auch Hodengewebe kann dauerhaft eingefroren werden (TESE). Mit den Spermien aus dem Gewebe kann später eine Kinderwunschbehandlung durchgeführt werden, falls sich im Ejakulat keine Spermien nachweisen lassen.</p>
+
+<h3 id="informationen-zur-kryokonservierung">Informationen zur Kryokonservierung</h3>
+
+<h4 id="was-bedeutet-kryokonservierung">Was bedeutet Kryokonservierung?</h4>
+<p>Bei dem Verfahren werden Spermienproben in einem Depot mit flüssigem Stickstoff bei -196 °C eingelagert. Die Lagerung erfolgt unter strengen Sicherheitsvorkehrungen. Die Unverwechselbarkeit der Proben ist gewährleistet.</p>
+
+<h4 id="wie-lange-können-spermien-eingefroren-bleiben">Wie lange können Spermien eingefroren bleiben?</h4>
+<p>Durch die Lagerung bleiben die Proben nahezu unbegrenzt haltbar. Untersuchungen haben gezeigt, dass Lagerungszeiten von bis zu 30 Jahren keinen Einfluss auf die Qualität der Spermien haben.</p>
+
+<h4 id="bestehen-genetische-risiken-mit-eingefrorenen-spermien-ein-kind-zu-zeugen">Bestehen genetische Risiken, mit eingefrorenen Spermien ein Kind zu zeugen?</h4>
+<p>Bisher ergaben sich keine Hinweise, dass durch die Verwendung der kryokonservierten Spermien ein erhöhtes genetisches Risiko besteht, ein behindertes Kind zu bekommen. Die Risiken sind vergleichbar mit denen der natürlichen Zeugung.</p>
+
+<h4 id="was-kostet-die-kryokonservierung-von-spermien-bzw-hodengewebe">Was kostet die Kryokonservierung von Spermien bzw. Hodengewebe?</h4>
+<p>Leider werden die Kosten der Kryokonservierung von den Krankenkassen in der Regel nicht erstattet. Sie müssen für die notwendigen Voruntersuchungen und für die Durchführung der Kryokonservierung mit einmaligen Kosten von ca. 300-500€ rechnen. Die Lagerungskosten betragen bei uns 22,50€ pro Monat.</p>
+
+<h4 id="wie-läuft-die-kryokonservierung-praktisch-ab">Wie läuft die Kryokonservierung praktisch ab?</h4>
+<p>Sie erhalten in der Regel einen Termin innerhalb weniger Tage. Zunächst wird eine Infektionsserologie (Blutabnahme) durchgeführt. Für die dann folgende Kryokonservierung des Ejakulates müssen Sie eine Samenprobe abgeben. Geeignete Räumlichkeiten zur Gewinnung der Probe sind bei uns vorhanden, Sie können die Probe auch von Zuhause aus mitbringen, benötigen dann aber einen speziellen Probenbecher. Die Samenprobe wird auf ihre Qualität untersucht, mit einem Gefrierschutzstoff versehen und eingefroren. Für den Fall, dass keine Spermien im Ejakulat vorhanden sind, besteht die Möglichkeit der Gewinnung von Gewebe direkt aus dem Hoden (TESE) im Rahmen einer kleinen ambulanten Operation, welche ebenfalls in unserem Zentrum durchgeführt wird. Direkt nach der Operation wird das Gewebe auf Spermien untersucht und kryokonserviert.</p>
+                
+			</article>
+			
+			<!-- Tags -->
+			<!--
+			<div class="mb-4">
+				<span class="taglist">
+				
+				</span>
+			</div>
+			-->
+ 
+            <!-- Mailchimp Subscribe Form -->
+			<!-- 
+            
+			-->
+            
+            
+             <!-- Author Box -->
+			 <!-- 
+                				
+				<div class="row mt-5">
+					<div class="col-md-2 align-self-center">
+                         
+                        <img class="rounded-circle" src="/assets/images/theodor.png" alt="Dr. Theodor Phillip" width="90"/>
+                         
+					</div>
+					<div class="col-md-10">		
+                        <h5 class="font-weight-bold">Written by Dr. Theodor Phillip </h5>
+						Meine Aufgabe als Mediziner ist es, kinderlosen Paaren neue Möglichkeiten zu eröffnen.					
+					</div>
+				</div>				
+                
+            -->
+            <!-- Comments -->
+			
+		</div>
+        
+        
+	</div>
 </div>
+
+
+<!-- Aletbar Prev/Next -->
+<!-- 
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+          
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="/corona/"> <img height="30px" class="mr-1" src="/assets/images/rona.jpg">  Die aktuelle Situation</a>
+            </div>
+          
+          
+            <div class="col-md-6 text-right pr-0">
+                <a class="text-dark" href="/paare/"> Gleichgeschlechtliche Paare  <img height="30px" class="ml-1" src="/assets/images/lesben.jpg"> </a>
+            </div>
+          
+        </div>
+    </div>
 </div>
+-->
     </main>
 
 

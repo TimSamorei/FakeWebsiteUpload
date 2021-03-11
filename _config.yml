@@ -1,11 +1,8 @@
 # Site
 name: 'Kinderwunschklinik Waghäusel'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+logo: 'assets/images/favicon2.png'
+favicon: 'assets/images/favicon5.png'
 baseurl: ''
-disqus: 'demowebsite'
-email: 'wowthemesnet@gmail.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 include: ["_pages"]
 permalink: /:title/
@@ -18,29 +15,31 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    thorsten:
-      name:           Dr. Schnidel
-      site:           https://www.wowthemes.net
-      avatar:         assets/images/doc.jpg
-      bio:            "Ich mach die besten Penisse!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
-
+      
     theodor:
       name:           Dr. Theodor Phillip
-      site:           https://www.wowthemes.net
       avatar:         assets/images/theodor.png
       bio:            "Meine Aufgabe als Mediziner ist es, kinderlosen Paaren neue Möglichkeiten zu eröffnen."
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
 
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+    roman:
+      name:           Dr. Roman Tisch
+      avatar:         assets/images/roman.png
+      bio:            "Wenn die Möglichkeiten erschöpft scheinen, kommen wir zum Einsatz."
+
+    anna:
+      name:           Dr. Anna Gramm
+      avatar:         assets/images/anna.png
+      bio:            "Falls die Natur einen Fehler macht, sind wir die Helfer."
+
+    felix:
+      name:           Felix Ochse
+      avatar:         assets/images/felix.png
+      bio:            "Die Möglichkeiten der Technik begeistern mich immer wieder."
+
+    sophia:
+      name:           Sophia Weschenfelder
+      avatar:         assets/images/sophia.png
+      bio:            "Wenn wir Paaren den Kinderwunsch erfüllen können, ist das die größte Belohnung in meinem Beruf."
  
 # Defaults
 defaults:
